@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerchats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relativemsg">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/relativemsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:elevation="20dp"
+
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:id="@+id/edtmsg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoons"
+            android:hint="Type here..."
+            android:textColorHint="@color/white"
+            android:textSize="24sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="5dp"
+
+            android:layout_marginBottom="5dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+
+            android:singleLine="true">
+
+        </EditText>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="2dp"
+
+
+
+            android:id="@+id/sendbtn"
+            android:layout_gravity="center"
+
+
+
+            android:src="@drawable/ic_send"
+
+            android:background="@drawable/buttoons">
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
